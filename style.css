@@ -1,0 +1,500 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.nav-conainer {
+  width: 100%;
+  background-color: #1f1346;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8rem;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+}
+
+.nav-conainer .logo {
+  color: #673de5;
+  font-family: "Archivo Black", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-conainer .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2; */
+  list-style-type: none;
+}
+
+.nav-conainer .nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Archivo", serif;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.nav-conainer .nav-menu li a:hover {
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.nav-list {
+  font-size: 28px;
+  display: none;
+}
+
+/* hero start */
+.hero-container {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.hero-deskripsi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-deskripsi .welcome {
+  font-family: "Archivo", serif;
+  color: #00b08e;
+  font-size: 25px;
+}
+
+.hero-deskripsi .name {
+  font-family: "Archivo Black", serif;
+  color: #673de5;
+  font-size: 32px;
+}
+
+.hero-deskripsi .deskripsi {
+  font-size: 20px;
+  font-family: "Archivo", serif;
+}
+
+.icon i {
+  padding: 5px;
+  font-size: 25px;
+  color: black;
+}
+
+.icon i:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
+}
+/* hero end */
+
+/* AboutMe start */
+.about-container {
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 2.5rem 8rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-deskripsi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-container .about-me {
+  color: #673de5;
+  font-size: 25px;
+  font-family: "Archivo", Serif;
+  text-align: center;
+}
+
+.about-deskripsi .profile {
+  text-align: center;
+  font-family: "Archivo", serif;
+  font-size: 17px;
+  line-height: 1.2;
+}
+/* AboutMe End */
+
+/* project start */
+.project-container {
+  padding: 3rem 2rem;
+}
+
+.project-container > .page-project {
+  font-family: "Archivo", serif;
+  color: #673de5;
+  font-size: 25px;
+  text-align: center;
+}
+
+.project-img {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-img > img {
+  height: 170px;
+  border-radius: 5px;
+}
+
+.project-img > img:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s;
+}
+
+/* project end */
+
+/* skills start */
+.skills-container {
+  background-color: #eaeaea;
+}
+
+.skills-container > .page-skills {
+  font-family: "Archivo", serif;
+  color: #673de5;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.skills-img {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.skills-img > i {
+  font-size: 60px;
+  color: #00b08e;
+}
+/* skills end */
+
+/* contact start */
+.contact-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.contact-container > form {
+  background-color: #00b08e;
+  padding: 2vw 4vw;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.contact-container > form > h2 {
+  text-align: center;
+  color: #673de5;
+  margin-bottom: 20px;
+  font-family: "Archivo", serif;
+}
+
+form > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+form > .wrapper > .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 2rem;
+}
+
+form > .wrapper > .left > input {
+  border: 0;
+  margin: 10px 0px;
+  padding: 20px;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+}
+
+form > .wrapper > .left > input::placeholder {
+  font-family: "Archivo", serif;
+}
+
+form > .wrapper > .right {
+  width: 50%;
+  padding: 0 2rem;
+}
+
+form > .wrapper > .right > textarea {
+  border: 0;
+  margin: 10px 0px;
+  padding: 20px;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+}
+
+form > .wrapper > .right > textarea::placeholder {
+  font-family: "Archivo", serif;
+}
+
+form > button {
+  background-color: tomato;
+  color: white;
+  border: 1px solid #1f1346;
+  padding: 12px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  width: 10rem;
+  font-weight: bold;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  transition: all 0.5s ease-in;
+  text-align: center;
+  display: block;
+}
+
+form > button:hover {
+  border: 1px solid #1f1346;
+  background: #673de5;
+  color: white;
+}
+
+.one-check {
+  padding-left: 15px;
+}
+/* contact end */
+
+/* footer start */
+.footer-container {
+  width: 100%;
+  background-color: #1f1346;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  padding: 0.5rem 7rem;
+}
+
+.footer-container > .top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.footer-container > .top > .logo-footer > .footer-logo {
+  font-family: "Archivo Black", serif;
+  color: #eaeaea;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.icon-footer > a > i {
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+}
+
+.icon-footer > a > i:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
+}
+
+.bottom {
+  padding: 0.5rem 0;
+  border-top: 1px solid gray;
+}
+
+.bottom > p {
+  text-align: center;
+  font-family: "Archivo", serif;
+  color: white;
+  font-size: 17px;
+}
+/* footer end */
+
+/* mobile device */
+@media only screen and (max-width: 768px) {
+  /* navbar start */
+  .nav-conainer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .nav-list:hover {
+    background-color: white;
+    color: #673de5;
+    transition: 0.7s;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hidden li {
+    display: none;
+  }
+
+  .nav-conainer .nav-menu li a {
+    padding: 7px;
+    font-size: 18px;
+  }
+  /* navbar end */
+
+  /* hero start */
+
+  .hero {
+    flex-wrap: wrap-reverse;
+  }
+
+  .hero > .hero-deskripsi {
+    padding-top: 1rem;
+  }
+
+  .hero > .hero-deskripsi > .deskripsi {
+    font-size: 17px;
+  }
+  .hero > .hero-deskripsi > .welcome {
+    font-size: 22px;
+  }
+  .hero > .hero-deskripsi > .name {
+    font-size: 27px;
+  }
+
+  .hero .hero-img > img {
+    width: 250px;
+  }
+
+  /* hero end */
+
+  /* aboutMe start */
+
+  .about-container {
+    background-color: #eaeaea;
+    padding: 2.5rem 1rem;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+
+  .about-deskripsi {
+    width: 100vh;
+  }
+
+  .about > .about-deskripsi > .profile {
+    text-align: justify;
+  }
+
+  /* aboutMe end */
+
+  /* project start */
+  .project-img > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+  /* project end */
+
+  /* skill start */
+  .skills-img {
+    flex-wrap: wrap;
+  }
+  /* skill end */
+
+  /* contact start */
+
+  .contact-container > form {
+    padding: 1rem 1px;
+  }
+  .contact-container > form > .wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contact-container > form > .wrapper > .left {
+    width: 100%;
+  }
+  .contact-container > form > .wrapper > .left > input {
+    margin: 8px 0px;
+    padding: 15px;
+  }
+  .contact-container > form > .wrapper > .right {
+    width: 100%;
+  }
+  .contact-container > form > .wrapper > .right > textarea {
+    margin: 8px 0px;
+    padding: 15px;
+  }
+  /* contact end */
+
+  /* footer start */
+  .footer-container {
+    padding: 0.5rem 3rem;
+  }
+  .footer-container > .top {
+    justify-content: space-between;
+  }
+  .footer-container > .top > .logo-footer > .footer-logo {
+    font-size: 22px;
+  }
+
+  /* footer end */
+}
